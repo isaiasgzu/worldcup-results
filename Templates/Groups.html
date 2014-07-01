@@ -1,0 +1,17 @@
+﻿<div class="col-md-3" ng-repeat="group in groups">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title group-letter">{{group.group.letter}}</h3>
+        </div>
+        <div class="panel-body">
+            <ul ng-repeat="team in group.group.teams" class="list-unstyled">
+                <li>
+                    <a title="Information"
+                       data-content="Points: {{team.team.points}} Goals: {{team.team.goal_differential}}"
+                       wc-popover
+                       href="#/Team/{{team.team.id}}">{{team.team.country}} - {{team.team.fifa_code}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

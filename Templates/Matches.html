@@ -1,0 +1,22 @@
+﻿<h2>Game Matches</h2>
+
+<ul class="nav nav-pills">
+    <li><a href="#/">Today Matches</a></li>
+    <li><a href="#/TomorrowMatches">Tomorrow Matches</a></li>
+    <li><a href="#/AllMatches">All Matches</a></li>
+</ul>
+<div ng-repeat="match in matches" class="col-sm-3 col-xs-offset-1 match-box">
+    <div class="col-sm-6 match-team">
+        <div class="match-teamcode">{{match.home_team.code}}</div>
+        <div class="match-goals">{{match.home_team.goals}}</div>
+    </div>
+    <div class="col-sm-6 match-team">
+        <div class="match-teamcode">{{match.away_team.code}}</div>
+        <div class="match-goals">{{match.away_team.goals}}</div>
+    </div>
+    <div class="col-md-12 match-info">
+        <div class="match-location">{{match.location}}</div>
+        <div class="match-date">{{match.datetime|date:'medium'}}</div>
+        <div class="match-status match-status-{{match.status|nospace}}">{{match.status | upperCaseFirstLetter}}</div>
+    </div>
+</div>

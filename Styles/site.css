@@ -1,0 +1,46 @@
+﻿body { padding-top: 70px; }
+div.match-box {
+    border: 1px solid #666;
+    box-shadow: 4px 1px 7px 0px #B5B5B5;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 3px;
+    background-image: url('/Images/stl.png');
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(38, 35, 35, 1);
+}
+.match-info {
+    font-size: 0.9em;    
+}
+.match-goals {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.match-teamcode{
+    font-size: 1.1em;
+}
+.match-status::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;  
+    margin-left: 5px;
+    box-shadow: 4px 1px 5px 0px #555;
+}
+.match-status-completed::after {
+    background-color: #1a9f11;
+}
+.match-status-future::after {
+    background-color: #0c51bf;
+}
+.match-status-inprogress::after {
+    background-color: #d1c700;
+}
+.group-letter{
+    text-align: center;
+}
+.wc-gtlnk{
+    text-align: center;
+    margin-top: 130px;
+}

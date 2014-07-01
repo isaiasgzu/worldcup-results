@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="worldCupR">
+<head>
+    <title>World Cup Results</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.css">
+    <link href="Styles/fontello.css" rel="stylesheet" />
+    <link href="Styles/site.css" rel="stylesheet" />
+    <link href="Styles/loadingbar.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">World Cup Results</a>
+        </div>
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="#/"><i class="icon-home"></i>Home</a></li>
+                <li><a href="#/Groups"><i class="icon-group"></i>Groups</a></li>
+                <li><a href="#/About"><i class="icon-info-circled"></i>About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <loadingbar></loadingbar>
+    <!-- Body -->
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-12" ng-view></div>
+        </div>
+    </div>
+    <div></div>
+    <!-- Vendors Scripts -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.js"></script>
+    <script src="https://code.angularjs.org/1.2.9/angular-route.min.js"></script>
+    <script src="Scripts/Vendors/bootstrap.min.js"></script>
+    <!-- App Scripts -->
+    <script src="Scripts/Utils.js"></script>
+    <script src="Scripts/Filters.js"></script>
+    <script src="Scripts/Services.js"></script>
+    <script src="Scripts/Directives.js"></script>
+    <script src="Scripts/Routes.js"></script>
+    <script src="Scripts/App.js"></script>
+    <script src="Scripts/Controllers/MatchesController.js"></script>
+    <script src="Scripts/Controllers/TeamController.js"></script>
+    <script src="Scripts/Controllers/GroupsController.js"></script>
+</body>
+</html>
